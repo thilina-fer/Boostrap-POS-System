@@ -1,5 +1,73 @@
-/* .user-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-} */
+/* Use a modern font stack */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+
+/* ============ Sidebar Styles ============ */
+.sidebar {
+  width: 100px;
+  height: 100vh;
+  /* Keeps the sidebar fixed to the side */
+  position: sticky;
+  top: 0;
+  /* Ensures icons are centered */
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============ Main Content Styles ============ */
+.main-content {
+  /* Fills the remaining width */
+  width: calc(100% - 100px);
+  /* Sets the light gray background for the content area */
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* ============ Sidebar Nav Link Styles ============ */
+.sidebar .nav-link {
+  color: #6c757d; /* Muted secondary text color */
+  border-radius: 0.5rem; /* Softer rounded corners */
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #e9ecef; /* Light gray hover */
+  color: #0d6efd; /* Primary color on hover */
+}
+
+/* Style for the ACTIVE navigation item */
+.sidebar .nav-link.active {
+  background-color: #0d6efd; /* Primary background */
+  color: #fff; /* White text */
+}
+
+.sidebar .nav-link.active:hover {
+  background-color: #0b5ed7; /* Darker primary on hover */
+}
+
+/* ============ Stat Card Hover Effect ============ */
+.stat-card {
+  transition: all 0.2s ease-in-out;
+}
+
+.stat-card:hover {
+  /* Subtle "lift" effect on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* ============ Table Styles ============ */
+.table-responsive .btn {
+  margin-right: 5px; /* Space out action buttons */
+}
+
+/* ==================================================
+**** NEW MODAL FORM STYLES ****
+==================================================
+*/
+.modal-body .form-floating {
+  /* Adds space between form fields in the modal */
+  margin-bottom: 1rem;
+}
