@@ -100,5 +100,165 @@ export const customer = function () {
               </table>
             </div>
           </div>
+              <div
+      class="modal fade"
+      id="addCustomerModal"
+      tabindex="-1"
+      aria-labelledby="addCustomerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="addCustomerModalLabel">
+              Add New Customer
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="customerName"
+                  placeholder="Customer Name"
+                />
+                <label for="customerName">Customer Name</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="customerContact"
+                  placeholder="Contact No"
+                />
+                <label for="customerContact">Contact No</label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="customerNIC"
+                  placeholder="NIC"
+                />
+                <label for="customerNIC">NIC</label>
+              </div>
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Address"
+                  id="customerAddress"
+                  style="height: 100px"
+                ></textarea>
+                <label for="customerAddress">Address</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save Customer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="updateCustomerModal"
+      tabindex="-1"
+      aria-labelledby="updateCustomerModalLabel"
+      aria-hidden="true"
+    >
+      <!--  ========= UPDATE CUSTOMER =========  -->
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="updateCustomerModalLabel">
+              Update Customer Details
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-floating">
+                <!-- <input
+                  type="text"
+                  class="form-control"
+                  id="updateCustomerID"
+                  placeholder="Customer ID"
+                  readonly
+                />
+                <label for="updateCustomerID">Customer ID</label> -->
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="updateCustomerName"
+                  placeholder="Customer Name"
+                />
+                <label for="updateCustomerName">Customer Name</label>
+              </div>
+              <div classs="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="updateCustomerContact"
+                  placeholder="Contact No"
+                />
+                <label for="updateCustomerContact"></label>
+              </div>
+              <div class="form-floating">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="updateCustomerNIC"
+                  placeholder="NIC"
+                />
+                <label for="updateCustomerNIC">NIC</label>
+              </div>
+              <div class="form-floating">
+                <textarea
+                  class="form-control"
+                  placeholder="Address"
+                  id="updateCustomerAddress"
+                  style="height: 100px"
+                ></textarea>
+                <label for="updateCustomerAddress">Address</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Update Customer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
         </section>`;
 };

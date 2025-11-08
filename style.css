@@ -71,3 +71,154 @@ body {
   /* Adds space between form fields in the modal */
   margin-bottom: 1rem;
 }
+
+/* ==================================================
+**** PRODUCT SECTION STYLES ****
+==================================================
+*/
+
+/* --- Category Tabs --- */
+.category-tab {
+  background-color: #fff;
+  border-radius: 1.25rem; /* 20px */
+  padding: 0.75rem 1.25rem;
+  min-width: 150px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #eee;
+}
+
+.category-tab .badge {
+  border-radius: 1rem; /* 16px */
+  padding: 0.35rem 0.75rem;
+  font-weight: 500;
+}
+
+.category-tab .category-info {
+  margin-top: 0.5rem;
+}
+
+/* Active tab style */
+.category-tab.active-tab {
+  background-color: #00a65a; /* Green from your image */
+  color: #fff;
+  border-color: #00a65a;
+}
+
+.category-tab.active-tab .badge {
+  background-color: #fff !important;
+  color: #333 !important;
+}
+
+/* Hover for inactive tabs */
+.category-tab:not(.active-tab):hover {
+  background-color: #f8f9fa;
+  transform: translateY(-3px);
+}
+
+/* --- Product Cards --- */
+.product-card {
+  border-radius: 1.25rem; /* 20px */
+  border: 1px solid #eee;
+  overflow: hidden; /* Ensures image corners are rounded */
+  transition: all 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-img {
+  height: 150px;
+  object-fit: contain; /* Use 'cover' if images are different sizes */
+  padding: 1rem;
+}
+
+.product-card .card-body {
+  position: relative;
+  padding: 1rem;
+}
+
+/* Add to cart button */
+.btn-add-cart {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%; /* Makes it a circle */
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-add-cart:hover {
+  background-color: #00a65a;
+  color: #fff;
+  border-color: #00a65a;
+}
+
+/* "Add New" Card */
+.product-card-add {
+  border-radius: 1.25rem; /* 20px */
+  border: 2px dashed #ddd;
+  background-color: #fafafa;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 250px; /* Give it a height similar to other cards */
+  transition: all 0.2s ease-in-out;
+}
+
+.product-card-add a {
+  color: #aaa;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.category-tab:hover {
+  background-color: #00a65a !important;
+  color: #fff;
+}
+
+.image {
+  width: 150px;
+  height: 200px;
+}
+
+<style>
+  /* By default, hide all item panes */
+  .item-pane {
+  display: none;
+}
+
+/* Show the pane that has the 'active' class */
+.item-pane.active {
+  display: block;
+}
+
+/* Just an example style for the active tab itself. */
+/* You can make this match your 'active-tab' style. */
+.category-tab.active {
+  /* Example: a blue border */
+  border: 2px solid #0d6efd;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.coffee-items {
+  background-color: #0b5ed7;
+}
