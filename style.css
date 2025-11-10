@@ -219,3 +219,47 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
+/* cards */
+ /* Custom styles for your tabs */
+      .category-tab {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        min-width: 150px;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .category-tab:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+      }
+
+      /* This 'active' class will be toggled by JavaScript */
+      .category-tab.active {
+        border-color: var(--bs-primary);
+        background-color: #e6f0ff; /* A light blue to show selection */
+      }
+
+      .category-tab .badge {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        font-size: 0.75em;
+        background-color: #d1e7dd; /* Light green for 'Available' */
+      }
+
+      /* This class will be used by JS to hide/show sections */
+      .item-section {
+        display: none; /* Hide all item sections by default */
+      }
+
+      /* Show the 'active' section */
+      .item-section.active {
+        display: block;
+      }
+      
+
+      
