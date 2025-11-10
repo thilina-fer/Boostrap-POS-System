@@ -200,7 +200,7 @@ body {
   height: 200px;
 }
 
-<style>
+
   /* By default, hide all item panes */
   .item-pane {
   display: none;
@@ -263,3 +263,47 @@ body {
       
 
       
+/* =================================================== */
+#login-page {
+        background-image: url("assests/login.jpg"); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      /* --- Glassmorphism Card Style --- */
+      .glass-card {
+        background: rgba(255, 255, 255, 0.2); 
+        
+        backdrop-filter: blur(10px);
+
+        border-radius: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+        width: 380px;
+        padding: 1.5rem; 
+      }
+
+      .glass-card .form-label {
+        color: #f8f9fa; 
+        font-weight: 500;
+      }
+
+      .glass-card h3 {
+         color: #ffffff; 
+      }
+
+      .form-control {
+        background: rgba(255, 255, 255, 0.3);
+        border: none;
+        color: #1a1a1a;
+      }
+      .form-control::placeholder {
+        color: #3a3a3a;
+      }
+      .form-control:focus {
+         background: rgba(255, 255, 255, 0.5);
+         color: #000;
+      }
