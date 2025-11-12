@@ -5,6 +5,7 @@ import { order } from "./pages/order.js";
 // Import controllers
 import { load_customer_tbl } from "./controller/CustomerController.js";
 import { load_all_items } from "./controller/ItemController.js";
+import { load_order_items } from "./controller/OrderController.js";
 
 // Function to initialize navigation
 function initializeNavigation() {
@@ -59,7 +60,10 @@ function loadPage(section) {
             break;
         case "order":
             $("#app").html(order());
-            // Initialize order section if you have order controller
+            // Initialize order section after a short delay
+            setTimeout(() => {
+                load_order_items();
+            }, 100);
             break;
         default:
             alert("Invalid section!");
