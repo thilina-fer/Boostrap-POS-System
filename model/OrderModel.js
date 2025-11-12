@@ -2,9 +2,9 @@ import { order_db } from "../db/DB.js";
 import OrderDTO from "../dto/OrderDTO.js";
 
 // Create a new order
-const create_order = (order_type, customer_name, customer_contact, items, total_amount) => {
+const create_order = (order_type, customer_id, customer_name, customer_contact, items, total_amount) => {
     const order_id = generate_order_id();
-    const newOrder = new OrderDTO(order_id, order_type, customer_name, customer_contact, items, total_amount, new Date());
+    const newOrder = new OrderDTO(order_id, order_type, customer_id, customer_name, customer_contact, items, total_amount, new Date());
     order_db.push(newOrder);
     console.log("Order created:", newOrder);
     return newOrder;
