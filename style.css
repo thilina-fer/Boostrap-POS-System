@@ -47,31 +47,6 @@ body {
   background-color: #0b5ed7; /* Darker primary on hover */
 }
 
-/* ============ Stat Card Hover Effect ============ */
-.stat-card {
-  transition: all 0.2s ease-in-out;
-}
-
-.stat-card:hover {
-  /* Subtle "lift" effect on hover */
-  transform: translateY(-5px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-
-/* ============ Table Styles ============ */
-.table-responsive .btn {
-  margin-right: 5px; /* Space out action buttons */
-}
-
-/* ==================================================
-**** NEW MODAL FORM STYLES ****
-==================================================
-*/
-.modal-body .form-floating {
-  /* Adds space between form fields in the modal */
-  margin-bottom: 1rem;
-}
-
 /* ==================================================
 **** PRODUCT SECTION STYLES ****
 ==================================================
@@ -200,9 +175,8 @@ body {
   height: 200px;
 }
 
-
-  /* By default, hide all item panes */
-  .item-pane {
+/* By default, hide all item panes */
+.item-pane {
   display: none;
 }
 
@@ -220,90 +194,88 @@ body {
 }
 
 /* cards */
- /* Custom styles for your tabs */
-      .category-tab {
-        background-color: #f8f9fa;
-        border: 1px solid #dee2e6;
-        border-radius: 0.5rem;
-        padding: 1rem;
-        min-width: 150px;
-        position: relative;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-      }
+/* Custom styles for your tabs */
+.category-tab {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  min-width: 150px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
 
-      .category-tab:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
-      }
+.category-tab:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}
 
-      /* This 'active' class will be toggled by JavaScript */
-      .category-tab.active {
-        border-color: var(--bs-primary);
-        background-color: #e6f0ff; /* A light blue to show selection */
-      }
+/* This 'active' class will be toggled by JavaScript */
+.category-tab.active {
+  border-color: var(--bs-primary);
+  background-color: #e6f0ff; /* A light blue to show selection */
+}
 
-      .category-tab .badge {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        font-size: 0.75em;
-        background-color: #d1e7dd; /* Light green for 'Available' */
-      }
+.category-tab .badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 0.75em;
+  background-color: #d1e7dd; /* Light green for 'Available' */
+}
 
-      /* This class will be used by JS to hide/show sections */
-      .item-section {
-        display: none; /* Hide all item sections by default */
-      }
+/* This class will be used by JS to hide/show sections */
+.item-section {
+  display: none; /* Hide all item sections by default */
+}
 
-      /* Show the 'active' section */
-      .item-section.active {
-        display: block;
-      }
-      
+/* Show the 'active' section */
+.item-section.active {
+  display: block;
+}
 
-      
 /* =================================================== */
 #login-page {
-        background-image: url("assests/login.jpg"); 
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
+  background-image: url("assests/login.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-      /* --- Glassmorphism Card Style --- */
-      .glass-card {
-        background: rgba(255, 255, 255, 0.2); 
-        
-        backdrop-filter: blur(10px);
+/* --- Glassmorphism Card Style --- */
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
 
-        border-radius: 15px;
-        border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
 
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 
-        width: 380px;
-        padding: 1.5rem; 
-      }
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
-      .glass-card .form-label {
-        color: #f8f9fa; 
-        font-weight: 500;
-      }
+  width: 380px;
+  padding: 1.5rem;
+}
 
-      .glass-card h3 {
-         color: #ffffff; 
-      }
+.glass-card .form-label {
+  color: #f8f9fa;
+  font-weight: 500;
+}
 
-      .form-control {
-        background: rgba(255, 255, 255, 0.3);
-        border: none;
-        color: #1a1a1a;
-      }
-      .form-control::placeholder {
-        color: #3a3a3a;
-      }
-      .form-control:focus {
-         background: rgba(255, 255, 255, 0.5);
-         color: #000;
-      }
+.glass-card h3 {
+  color: #ffffff;
+}
+
+/* .form-control {
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: #1a1a1a;
+} */
+.form-control::placeholder {
+  color: #3a3a3a;
+}
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.5);
+  color: #000;
+}
