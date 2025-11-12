@@ -1,6 +1,6 @@
 // DB eken saha DTO eken data import karaganna
 // *** IMPORT WALATA ".js" KIYANA EKA ANIWARYAI ***
-import { customer_db } from "../db/customer_db.js";
+import {customer_db} from "../db/DB.js";
 import CustomerDTO from "../dto/CustomerDTO.js";
 
 // 1. Add Customer
@@ -13,7 +13,7 @@ export const add_customer = (id, name, contact, nic, address) => {
 // *** ME FUNCTION EKA HARIYATAMA MEHEMA THIYENNA ONE ***
 export const delete_customer = (index) => {
     // 'splice' kiyanne array eken e index eke thiyena eka ain karanna
-    customer_db.splice(index, 1); 
+    customer_db.splice(index, 1);
 }
 
 // 3. Get All Customers
